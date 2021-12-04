@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+@use './_minireset.min.css';
+html {
+  font-family: 'Kumbh Sans', sans-serif;
+  width: 100vw;
+  height: 100vh;
+  background: #19a2ae;
+  overflow: hidden;
+  z-index: 1;
+}
+
+body {
+  font-size: 18px;
+  max-width: 100vw;
+  max-height: 100vh;
+}
+
+.bg1 {
+  background: #19a2ae;
+  background: url("../images/bg-pattern-top.svg");
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 100vw;
+  height: 50vh;
+  top: 0;
+  right: 0;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  -webkit-transform: scaleY(-1);
+          transform: scaleY(-1);
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -2;
+}
+
+.gradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(25%, #19a2ae), to(rgba(25, 162, 174, 0)));
+  background-image: linear-gradient(to right, #19a2ae 25%, rgba(25, 162, 174, 0) 100%);
+  width: 100%;
+  height: 50vh;
+  z-index: -1;
+}
+
+.bg2 {
+  background: #19a2ae;
+  background-image: url("../images/bg-pattern-bottom.svg");
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 50vh;
+  left: 0;
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+  width: 100vw;
+  height: 50vh;
+  z-index: -1;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.card {
+  background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 10em auto 0 auto;
+  max-width: 22em;
+  max-height: 30em;
+  border-radius: 30px;
+  overflow: hidden;
+  -webkit-box-shadow: 3px 29px 44px -23px rgba(0, 0, 0, 0.75);
+          box-shadow: 3px 29px 44px -23px rgba(0, 0, 0, 0.75);
+}
+
+.card .bg-img {
+  width: 100%;
+  height: 8em;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.card .avatar {
+  width: 6em;
+  height: 6em;
+  border: 5px solid white;
+  border-radius: 280192px;
+  margin: 0 auto -2em auto;
+  -webkit-transform: translateY(-3.2em);
+          transform: translateY(-3.2em);
+}
+
+.card .heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1.2rem;
+  font-weight: 700;
+  width: 100%;
+}
+
+.card .heading .age {
+  color: #969696;
+  font-weight: 400;
+  margin-left: .2em;
+}
+
+.card .sub-heading {
+  color: #969696;
+  font-size: .9rem;
+  margin: .5em auto 1em auto;
+  text-align: center;
+  width: 100%;
+}
+
+.card hr.divider {
+  border-top: 1px solid #dfdfdf;
+  width: 100%;
+}
+
+.card .stats {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  text-align: center;
+  margin: 1em 2em 2em 2em;
+}
+
+.card .stats > * {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.card .head {
+  font-weight: 700;
+  margin-bottom: .5em;
+}
+
+.card .sub {
+  color: #969696;
+  font-size: .7rem;
+  letter-spacing: 2px;
+  margin-bottom: .5em;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 1em;
+  width: 100%;
+  background: #2d3248;
+  color: white;
+}
+
+footer .attribution a {
+  color: yellow;
+  text-decoration: none;
+}
+/*# sourceMappingURL=main.css.map */
